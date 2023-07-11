@@ -67,3 +67,32 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.a2hsButton {
+  position: absolute;
+  top: 35px;
+  width: 200px;
+  height: 60px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(115, 115, 115, 0.39);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(115, 115, 115, 0.78);
+}
+::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 5px #ff0000;*/
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+  width: 20px;
+}
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -9,7 +9,7 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "rm -rf node_modules/.cache/gh-pages && gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,22 +23,11 @@
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-react": "^4.0.1",
-    "eslint": "^8.44.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.1",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.0",
-    "workbox-background-sync": "^6.6.0",
-    "workbox-broadcast-update": "^6.6.0",
-    "workbox-cacheable-response": "^6.6.0",
-    "workbox-core": "^6.6.0",
-    "workbox-expiration": "^6.6.0",
-    "workbox-google-analytics": "^6.6.0",
-    "workbox-navigation-preload": "^6.6.0",
-    "workbox-precaching": "^6.6.0",
-    "workbox-range-requests": "^6.6.0",
-    "workbox-routing": "^6.6.0",
-    "workbox-strategies": "^6.6.0",
-    "workbox-streams": "^6.6.0"
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^0.16.4",
+    "workbox-window": "^7.0.0"
   }
 }

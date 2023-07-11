@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
@@ -87,7 +88,7 @@ const Segments = () => {
   });
 
   return (
-    <div>
+    <div style={{maxWidth: "90vw"}}>
       <Track {...getTrackProps()}>
         {ticks.map(({ value, getTickProps }) => (
           <Tick {...getTickProps()}>
@@ -210,13 +211,13 @@ const Segments = () => {
           textAlign: 'left',
         }}
       >
-        <code>
-          {JSON.stringify({
-            values,
-            selectedSegment,
-            selectedHandle,
-          })}
-        </code>
+        {/*<code>*/}
+        {/*  {JSON.stringify({*/}
+        {/*    values,*/}
+        {/*    selectedSegment,*/}
+        {/*    selectedHandle,*/}
+        {/*  })}*/}
+        {/*</code>*/}
       </pre>
     </div>
   );

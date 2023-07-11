@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-
+// @ts-nocheck
 interface SelectProps {
   selectItems: Array<{
     name: string;
@@ -18,8 +17,8 @@ const Select = ({
   };
   return (
     <select name={selectId} id={selectId} onChange={handleOnSelect}>
-      {selectItems.map((item: any, index) => (
-        <option value={index} key={item?.name + index}>
+      {selectItems.map((item: {name: string}, index) => (
+        <option value={index} key={index}>
           {item?.name}
         </option>
       ))}

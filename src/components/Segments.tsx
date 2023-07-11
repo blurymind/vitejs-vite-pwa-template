@@ -10,14 +10,14 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export const Track = styled('div')`
+export const Track = styled.div`
   display: inline-block;
   height: 8px;
   width: 90%;
   margin: 0 5%;
 `;
 
-export const Tick = styled('div')`
+export const Tick = styled.div`
   :before {
     content: "";
     position: absolute;
@@ -29,7 +29,7 @@ export const Tick = styled('div')`
   }
 `;
 
-export const TickLabel = styled('div')`
+export const TickLabel = styled.div`
   position: absolute;
   font-size: 0.6rem;
   color: rgba(0, 0, 0, 0.5);
@@ -39,7 +39,7 @@ export const TickLabel = styled('div')`
 `;
 
 // todo make it scale w random colors
-export const Segment = styled('div')`
+export const Segment = styled.div`
   background: ${(props: any) =>
     props.index % 4 === 0
       ? '#3e8aff'
@@ -51,7 +51,7 @@ export const Segment = styled('div')`
   height: 100%;
 `;
 
-export const Handle = styled('div')`
+export const Handle = styled.div`
   background: #ff1a6b;
   display: flex;
   align-items: center;
